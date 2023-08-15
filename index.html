@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Horizon RP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<input type="checkbox" id="nav-control" class="nav-control" >
+<label for="nav-control" class="toggle-button">
+  <div class="wolverine">
+    <div class="claws"></div> <span>menu</span>
+  </div>
+</label>
+<nav class="navigation">
+<br>
+  <h1><a href="index.html">Home</a></h1>
+  <h1><a href="rules.html">Rules</a></h1>
+  <h1><a href="#">Applications</a></h1>
+  <h1><a href="#">Documents</a></h1>
+  <h1><a href="#">Tebex</a></h1>
+  <h1><a href="#">Forum</a></h1>
+<div class="topnavright">X</div>
+</nav>
+
+
+<div class="animation-wrapper">
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+</div>
+    <div class="background">
+        <img src="logo.png" alt="Logo" class="logo">
+    </div>
+    <script src="script.js"></script>
+    <script>
+    const logo = document.querySelector('.logo');
+
+    document.addEventListener('mousemove', (event) => {
+        const x = (event.clientX / window.innerWidth - 0.5) * 20;
+        const y = (event.clientY / window.innerHeight - 0.5) * 60;
+        
+        logo.style.transform = `translate(-50%, -50%) rotateX(${y}deg) rotateY(${x}deg)`;
+    });
+</script>
+</body>
+</html>
+
+
